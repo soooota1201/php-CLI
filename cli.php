@@ -51,10 +51,5 @@ class App
     } else {
       $this->message('お子ちゃまですね。早く寝なさい！！');
     }
-
-    // if($this->isOld($age))
-    // {
-    //   $this->message('ご高齢です。');
-    // }
   }
 }
