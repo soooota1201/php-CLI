@@ -36,9 +36,8 @@ class LifeTime
       return;
     }
     $age90 = 90;
-    $timeOfaYear = 24 * 365;
-    $restTime = ($timeOfaYear)*($age90 - $age);
+    $hoursOfaYear = 24 * 365;
+    $restTime = $hoursOfaYear*($age90 - $age);
     echo 'あなたが90歳まで生きるとしたら死ぬまで残り' . $restTime . '時間です。';
   }
-
 }
