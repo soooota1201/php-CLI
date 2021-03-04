@@ -19,12 +19,22 @@ class LifeTime
   protected function listen()
   {
     $age = $this->ask('ご自身の年齢を入力してください。');
-    return $age;
+    if(!is_numeric($age))
+    {
+      return false;
+    } else {
+      return $age;
+    }
   }
-
+  
   public function calc()
   {
     $age = $this->listen();
+    if($age === false)
+    {
+      echo '数字を入力してください';
+      return;
+    }
     $age90 = 90;
     $timeOfaYear = 24 * 365;
     $restTime = ($timeOfaYear)*($age90 - $age);
