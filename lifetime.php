@@ -32,7 +32,7 @@ class LifeTime
     $age = $this->listen();
     if($age === false)
     {
-      echo '数字を入力してください';
+      $this->ask('数字を入力してください');
       return;
     }
     $age90 = 90;
