@@ -28,7 +28,7 @@ class Fizzbuzz
         echo 'fizz' . "\n";
       }
       elseif($this->buzz($i)) {
-        echo 'fizz' . "\n";
+        echo 'bizz' . "\n";
       }
       // var_dump($i);
       else {
