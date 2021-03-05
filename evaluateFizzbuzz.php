@@ -46,20 +46,19 @@ class EvaluateFizzbuzz {
     $num = $this->listen();
 
     if($num === false) {
-      $this->message('1000以下の数字を入力してください。');
+      $this->message('1000以下の数字を入力してくれまっか。');
       return;
     }
 
     if ($this->fz($num)) {
-      echo 'fizzbuzz' . "\n";
+      $this->message('fizzbuzzですやん') . "\n";
     } elseif ($this->fizz($num)) {
-      echo 'fizz' . "\n";
+      $this->message('fizzですやん') . "\n";
     } elseif ($this->buzz($num)) {
-      echo 'bizz' . "\n";
+      $this->message('buzzですやん') . "\n";
     }
     else {
-      echo $num . "\n";
-      $this->message('普通の数字でっせ');
+      $this->message('fizzbuzzちゃいますやンンンンnnnnn');
     }
   }
 }
